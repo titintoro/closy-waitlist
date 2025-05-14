@@ -58,7 +58,7 @@ const FeaturesSection = () => {
       className="section-container bg-closy-pink relative"
     >
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="title-castio text-white text-center mb-16">¿Qué hace Closy?</h2>
+        <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl tracking-tight text-white text-center mb-16">¿Qué hace Closy?</h2>
         
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Mobile mockup */}
@@ -85,7 +85,7 @@ const FeaturesSection = () => {
           <div className="w-full lg:w-1/2 text-white">
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="font-castio text-3xl">{currentFeature + 1}. {features[currentFeature].title}</h3>
+                <h3 className="font-playfair text-3xl">{currentFeature + 1}. {features[currentFeature].title}</h3>
               </div>
               
               <p className="body-space text-white/90 mb-10">

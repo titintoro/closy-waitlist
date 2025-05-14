@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/castio');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -67,7 +65,7 @@
   }
   
   .title-castio {
-    @apply font-castio text-4xl md:text-5xl lg:text-6xl tracking-tight;
+    @apply font-playfair text-4xl md:text-5xl lg:text-6xl tracking-tight;
   }
   
   .body-inter {

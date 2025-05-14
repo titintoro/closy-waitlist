@@ -1,16 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+  
   return (
     <footer className="bg-closy-offwhite py-12 border-t border-gray-200">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {/* Logo and tagline */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
-            <Link to="/" className="inline-block">
-              <span className="text-closy-maroon font-castio text-2xl">Closy</span>
-            </Link>
+            <a href="#" onClick={(e) => { e.preventDefault(); scrollToTop(); }} className="inline-block">
+              <span className="text-closy-maroon font-playfair text-2xl">Closy</span>
+            </a>
             <p className="mt-4 text-gray-600 font-inter">
               Tu personal shopper de moda con IA que revoluciona tu armario.
             </p>
@@ -21,7 +27,7 @@ const Footer = () => {
             <h3 className="font-space font-medium text-gray-900 mb-4">Explora</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-600 hover:text-closy-pink transition-colors">Inicio</Link>
+                <a href="#" onClick={(e) => { e.preventDefault(); scrollToTop(); }} className="text-gray-600 hover:text-closy-pink transition-colors">Inicio</a>
               </li>
             </ul>
           </div>

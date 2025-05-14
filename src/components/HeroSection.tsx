@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -25,7 +24,7 @@ const HeroSection = () => {
         {/* Text content */}
         <div className={`w-full ${!isMobile ? 'lg:w-1/2' : 'lg:w-3/4'} space-y-4 flex flex-col justify-center`}>
           <div className="space-y-3 max-w-sm mx-auto text-center px-4 lg:text-left lg:mx-0">
-            <h1 className="title-castio mb-2 lg:mb-3 animate-fade-in">Hola, soy Rose</h1>
+            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl tracking-tight mb-2 lg:mb-3 animate-fade-in">Hola, soy Rose</h1>
             
             <div className="body-inter text-gray-700 text-sm md:text-base">
               <p className="animate-fade-in my-2" style={{ animationDelay: "100ms" }}>

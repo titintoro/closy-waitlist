@@ -6,7 +6,7 @@ const StyleDiscoverySection = () => {
   
   return <section id="style-discovery" className="section-container bg-closy-green">
       <div className="max-w-6xl mx-auto w-full flex flex-col items-center">
-        <h2 className="title-castio text-white text-center mb-4 md:mb-10">Descubre el estilo que te hace única</h2>
+        <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl tracking-tight text-white text-center mb-4 md:mb-10">Descubre el estilo que te hace única</h2>
         
         {/* Visual collage */}
         <div className="relative w-full h-[600px] md:h-[800px] mb-6 md:mb-12">

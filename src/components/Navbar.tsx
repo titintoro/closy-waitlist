@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="#" onClick={(e) => { e.preventDefault(); scrollToTop(); }} className="flex items-center space-x-2">
-              <span className="text-closy-maroon font-castio text-2xl">Closy</span>
+              <span className="text-closy-maroon font-playfair text-2xl">Closy</span>
             </a>
           </div>
 
