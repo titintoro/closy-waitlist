@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     sourcemap: false,
-    minify: 'terser',
+    minify: mode === 'development' ? false : 'terser',
     rollupOptions: {
       output: {
         // Asegurar que los archivos tengan las extensiones correctas
@@ -21,9 +21,12 @@ export default defineConfig(({ mode }) => ({
       },
     },
     terserOptions: {
+      format: {
+        comments: false
+      },
       compress: {
-        drop_console: true,
-        drop_debugger: true,
+        drop_console: mode !== 'development',
+        drop_debugger: mode !== 'development',
       },
     },
   },
